@@ -1,0 +1,24 @@
+{
+  "name": "data_monkey",
+  "version": "0.0.0",
+  "authors": [
+    "steve <stevecd123@gmail.com>"
+  ],
+  "description": "monkeys data",
+  "main": "src/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "*"
+  },
+  "devDependencies": {
+    "angular": "~1.2.5"
+  }
+}

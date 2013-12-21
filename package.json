@@ -1,0 +1,14 @@
+{
+  "name": "data_monkey",
+  "version": "0.0.0",
+  "description": "Tracks annoying data",
+  "main": "build/index.html",
+  "dependencies": {
+    "grunt-cli": "~0.1.11"
+  },
+  "author": "steve delfaus",
+  "licenses": {
+    "type": "GPLv3",
+    "url": "http://www.gnu.org/licenses/gpl-3.0.html"
+  }
+}
