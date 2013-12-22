@@ -1,7 +1,7 @@
 {
-  "name": "data_monkey",
+  "name": "win_alert",
   "version": "0.0.0",
-  "description": "Tracks annoying data",
+  "description": "Alerts wins",
   "main": "build/index.html",
   "dependencies": {
     "grunt-cli": "~0.1.11"

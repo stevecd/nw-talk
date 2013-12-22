@@ -50,7 +50,14 @@ module.exports = {
    */
   vendor_files: {
     js: [
+      'vendor/jquery/jquery.min.js',
+      'vendor/jquery/jquery.min.map',
+      'vendor/underscore/underscore-min.js',
+      'vendor/underscore/underscore-min.map',
+      'vendor/moment/min/moment.min.js',
+      'vendor/bootstrap/dist/js/bootstrap.js',
       'vendor/angular/angular.js',
+      'vendor/angular-ui-router/release/angular-ui-router.js'
     ],
     css: [
     ],

@@ -5,7 +5,7 @@ angular.module('winAlert', [
 ])
 
 .config( function winAlertConfig ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/stocks');
+  $urlRouterProvider.otherwise('/alerts');
 })
 
 .run( function run() {
@@ -19,11 +19,7 @@ angular.module('winAlert', [
   });
 })
 
-.controller( 'NavController', function NavController( thinker, $scope, $location) {
-  $scope.thinker = thinker;
-  $scope.isActive = function(viewLocation) {
-    return viewLocation === $location.path();
-  };
+.controller( 'MenuController', function NavController($scope, $location) {
 })
 
 ;
