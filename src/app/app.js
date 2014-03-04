@@ -1,20 +1,21 @@
-angular.module('winAlert', [
+angular.module('basicNwStarter', [
   'templates-app',
   'templates-common',
-  'ui.router'
+  'ui.router',
+  'basicNwStarter.main'
 ])
 
-.config( function winAlertConfig ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/alerts');
+.config( function basicNwStarterConfig ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/main');
 })
 
 .run( function run() {
 })
 
-.controller( 'WinAlertCtrl', function AppCtrl ( $scope, $location ) {
+.controller( 'basicNwStarterCtrl', function basicNwStarterCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | winAlert' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | basicNwStarter' ;
     }
   });
 })
@@ -26,5 +27,5 @@ angular.module('winAlert', [
 
 //bootstrap it
 angular.element(document).ready(function() {
-  angular.bootstrap(document, ['winAlert']);
+  angular.bootstrap(document, ['basicNwStarter']);
 });

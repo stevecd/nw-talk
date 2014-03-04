@@ -1,12 +1,13 @@
 {
-  "name": "win_alert",
+  "name": "basicNwStarter",
   "version": "0.0.0",
-  "description": "Alerts wins",
+  "description": "Basic NW starter App",
   "main": "build/index.html",
   "dependencies": {
-    "grunt-cli": "~0.1.11"
+    "grunt-cli": "~0.1.11",
+    "node-xmpp-client": "~0.4.0"
   },
-  "author": "steve delfaus",
+  "author": "stevecd123",
   "licenses": {
     "type": "GPLv3",
     "url": "http://www.gnu.org/licenses/gpl-3.0.html"
