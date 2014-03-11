@@ -1,1 +1,24 @@
-<h1>It Works! :)</h1>
+<div class="idle-hider" ng-show="currentUser.idle" ng-click="wakeUp()">
+</div>
+<div class="top-bar">
+  <div class="buddy-hider" ng-click="toggleBuddyList()">
+    {{hiderText}}
+  </div>
+  <div class="chatting-to">
+    <span class="username">{{currentUser.chattingTo.shortname}}</span>
+    <span class="status" ng-show="currentUser.chattingTo.status">({{currentUser.chattingTo.status}})</span>
+    <span class="typingState" ng-show="currentUser.chattingTo.typingState">({{currentUser.chattingTo.typingState}})</span>
+  </div>
+</div>
+<buddy-list></buddy-list>
+<div class="chat-log" ng-class="{'buddies-shown': buddyList.shown}" scroll-glue>
+  <div class="messages">
+    <div class="message" ng-class="message.direction" ng-repeat="message in currentUser.chattingTo.chatLog" quick-repeat-list="farts">
+      <span class="nub">({{message.time}})&nbsp;&#x25B6;&nbsp;</span>
+      <span class="body">{{message.body}}</span>
+    </div>
+  </div>
+</div>
+<div class="message-input">
+  <textarea ng-model="currentUser.currentInput" ng-keypress="sendMessage($event)"></textarea>
+</div>

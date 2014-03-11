@@ -1,16 +1,21 @@
 {
-  "name": "basicNwStarter",
+  "name": "nwTalk",
   "version": "0.0.0",
-  "description": "Basic NW starter App",
+  "description": "google talk client using node-webkit, angularjs, and node-xmpp",
   "main": "build/index.html",
+  "window": {
+    "show": false
+  },
   "dependencies": {
     "grunt-cli": "~0.1.11",
-    "node-xmpp-client": "~0.4.0"
+    "node-xmpp-core": "~0.5.0",
+    "node-stringprep": "~0.2.3",
+    "node-xmpp-client": "~0.4.0",
+    "ltx": "~0.4.0"
   },
-  "author": "stevecd123",
+  "author": "stevecd123 <stevecd123@gmail.com>",
   "licenses": {
-    "type": "GPLv3",
-    "url": "http://www.gnu.org/licenses/gpl-3.0.html"
+    "type": "MIT"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.11",

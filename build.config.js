@@ -26,10 +26,16 @@ module.exports = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    //less: ['src/**/*.less', 'src/less/main.less']
     less: ['src/**/*.less']
   },
 
+  test_files: {
+    js: [
+      'vendor/angular-mocks/angular-mocks.js',
+      'src/**/*.js',
+      'spec/*.js'
+    ]
+  },
   /**
    * This is the same as `app_files`, except it contains patterns that
    * reference vendor code (`vendor/`) that we need to place into the build
@@ -57,7 +63,9 @@ module.exports = {
       'vendor/moment/min/moment.min.js',
       'vendor/bootstrap/dist/js/bootstrap.js',
       'vendor/angular/angular.js',
-      'vendor/angular-ui-router/release/angular-ui-router.js'
+      'vendor/angular-ui-router/release/angular-ui-router.js',
+      'vendor/angularjs-scroll-glue/src/scrollglue.js',
+      'vendor/ng-idle/angular-idle.js'
     ],
     css: [
     ],

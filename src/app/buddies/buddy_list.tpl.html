@@ -1,0 +1,9 @@
+<div class="buddy-list" ng-show="buddyList.shown">
+  <div class="buddy" ng-repeat="buddy in buddyList.buddies" ng-class="buddy.cssClasses()" ng-click="chatTo(buddy)">
+    <div class="status">
+    </div>
+    <div class="name">
+      {{buddy.shortname}}
+    </div>
+  </div>
+</div>

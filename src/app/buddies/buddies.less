@@ -1,0 +1,29 @@
+.buddy {
+  position: relative;
+  cursor: pointer;
+  div.status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+  }
+  &.chat-open {
+    background-color: grey;
+  }
+  &.online {
+    .status {
+      background-color: darkgreen;
+    }
+  }
+  &.away {
+    .status {
+      background-color: grey;
+    }
+  }
+
+  .name {
+    margin-left: 10px;
+  }
+}
+
