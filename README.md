@@ -16,7 +16,7 @@ cd ../../../node_modules/node-xmpp-core/node_modules/ltx/node-expat/
 <nw-gyp rebuild command again>
 cd ../../../../`
 grunt build
-start node-webkit, maybe `nw ./`
+start node-webkit, maybe nw ./
 ```sh
 
 ## features
