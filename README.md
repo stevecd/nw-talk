@@ -17,7 +17,7 @@ cd ../../../node_modules/node-xmpp-core/node_modules/ltx/node-expat/
 cd ../../../../`
 grunt build
 start node-webkit, maybe nw ./
-```sh
+```
 
 ## features
 * Buddylist generated from presence stanzas.
