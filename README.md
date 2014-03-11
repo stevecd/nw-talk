@@ -16,4 +16,10 @@ A simple interface for google talk using node-webkit.
 11. `cd ../../../../`
 12. start node-webkit, maybe `nw ./`
 
+## features
+* Buddylist generated from presence stanzas.
+* Send/receive chat stanzas.
+* 5-minute idle timer marks user as away and blanks out the UI with a white overlay until clicked.
+* Overlay can be triggered with escape as well.
+
 It's tedious to have to rebuild the same package 3 times, eventually I hope to figure that out.
