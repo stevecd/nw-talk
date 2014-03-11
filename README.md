@@ -11,10 +11,10 @@ bower install
 cd node_modules/ltx/node_modules/node-expat/
 nw-gyp rebuild --target=<Your node-webkit version> (can be found by starting node-webkit and going to url 'nw:version')
 cd ../../../node_modules/node-xmpp-client/node_modules/ltx/node-expat/
-<nw-gyp rebuild command again>
+nw-gyp rebuild --target=<Your node-webkit version>
 cd ../../../node_modules/node-xmpp-core/node_modules/ltx/node-expat/
-<nw-gyp rebuild command again>
-cd ../../../../`
+nw-gyp rebuild --target=<Your node-webkit version>
+cd ../../../../
 grunt build
 start node-webkit, maybe nw ./
 ```
