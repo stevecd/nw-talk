@@ -8,7 +8,7 @@ A simple interface for google talk using node-webkit.
 3. `npm install`
 4. `bower install`
 5. `cd node_modules/ltx/node_modules/node-expat/`
-6. `nw-gyp rebuild --target=Your node-webkit version (can be found by starting node-webkit and going to url 'nw:version')`
+6. `nw-gyp rebuild --target=Your node-webkit version` (can be found by starting node-webkit and going to url 'nw:version')
 7. `cd ../../../node_modules/node-xmpp-client/node_modules/ltx/node-expat/`
 8. nw-gyp rebuild command again
 9. `cd ../../../node_modules/node-xmpp-core/node_modules/ltx/node-expat/`
